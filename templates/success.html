@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>登录成功</title>
+</head>
+<body>
+登录成功.
+<br>
+<table border="1">
+    <tr>
+        <th>用户名</th>
+        <th>密码</th>
+    </tr>
+    {% for line in data %}
+        <tr>
+            <td>{{ line.user }}</td>
+            <td>{{ line.pwd }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
